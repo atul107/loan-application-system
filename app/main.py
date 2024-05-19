@@ -1,11 +1,11 @@
 import uvicorn
 from fastapi import FastAPI
-from api import routes
+from app.api import routes
 from fastapi.middleware.cors import CORSMiddleware
-from models.database import Base, engine, get_db
+from app.models.database import Base, engine, get_db
 import threading
 from sqlalchemy.orm import Session
-from workers.kafka_consumer import KafkaConsumerService 
+from app.workers.kafka_consumer import KafkaConsumerService 
 
 app = FastAPI()
 

@@ -1,7 +1,7 @@
 
 import logging
 import os
-from config import LOG_FILE, LOG_LEVEL
+from app.config import LOG_FILE, LOG_LEVEL
 
 # Configure logging
 logging.basicConfig(

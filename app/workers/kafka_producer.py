@@ -1,8 +1,8 @@
 import json
 from kafka import KafkaProducer
-from utils.logger import logger
-from config import KAFKA_BROKER_URL
-from utils.helper import json_serializer
+from app.utils.logger import logger
+from app.config import KAFKA_BROKER_URL
+from app.utils.helper import json_serializer
 
 # Create Kafka producer
 producer = KafkaProducer(

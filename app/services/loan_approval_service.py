@@ -1,8 +1,8 @@
 
-from api.schemas import LoanApprovalResponseSchema, RiskAssessmentResponseSchema
+from app.api.schemas import LoanApprovalResponseSchema, RiskAssessmentResponseSchema
 from sqlalchemy.orm import Session
-from models.loan_application import LoanApplicationDB
-from utils.logger import logger
+from app.models.loan_application import LoanApplicationDB
+from app.utils.logger import logger
 
 class LoanApprovalService:
     APPROVAL_THRESHOLD = 5 

@@ -1,15 +1,15 @@
 from sqlalchemy.orm import Session
 from fastapi import APIRouter, Depends, HTTPException, status
-from api.schemas import (
+from app.api.schemas import (
     LoanApplicationCreateSchema,
     LoanApplicationUpdateSchema,
     LoanApplicationResponseSchema,
     RiskAssessmentResponseSchema
 )
-from services.risk_accessment_service import RiskAssessmentService
-from services.loan_application_service import LoanApplicationService
-from models import database
-from utils.logger import logger
+from app.services.risk_accessment_service import RiskAssessmentService
+from app.services.loan_application_service import LoanApplicationService
+from app.models import database
+from app.utils.logger import logger
 
 router = APIRouter()
 

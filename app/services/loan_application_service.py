@@ -1,9 +1,9 @@
 from sqlalchemy.orm import Session
-from models.loan_application import LoanApplicationDB
-from api.schemas import LoanApplicationCreateSchema, LoanApplicationUpdateSchema, LoanApplicationResponseSchema
-from utils.logger import logger
+from app.models.loan_application import LoanApplicationDB
+from app.api.schemas import LoanApplicationCreateSchema, LoanApplicationUpdateSchema, LoanApplicationResponseSchema
+from app.utils.logger import logger
 from fastapi import HTTPException, status
-from workers.kafka_producer import send_message
+from app.workers.kafka_producer import send_message
 
 class LoanApplicationService:
     @staticmethod

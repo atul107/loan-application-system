@@ -1,4 +1,4 @@
-from api.schemas import RiskAssessmentResponseSchema
+from app.api.schemas import RiskAssessmentResponseSchema
 
 class RiskAssessmentService:
     @staticmethod

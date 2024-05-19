@@ -1,12 +1,12 @@
 import json
 from kafka import KafkaConsumer
 from sqlalchemy.orm import Session
-from services.loan_application_service import LoanApplicationService
-from services.risk_accessment_service import RiskAssessmentService
-from services.loan_approval_service import LoanApprovalService
-from api.schemas import LoanApplicationCreateSchema, LoanApplicationUpdateSchema, RiskAssessmentResponseSchema, LoanApprovalResponseSchema
-from utils.logger import logger
-from config import KAFKA_BROKER_URL, KAFKA_TOPICS
+from app.services.loan_application_service import LoanApplicationService
+from app.services.risk_accessment_service import RiskAssessmentService
+from app.services.loan_approval_service import LoanApprovalService
+from app.api.schemas import LoanApplicationCreateSchema, LoanApplicationUpdateSchema, RiskAssessmentResponseSchema, LoanApprovalResponseSchema
+from app.utils.logger import logger
+from app.config import KAFKA_BROKER_URL, KAFKA_TOPICS
 
 class KafkaConsumerService:
     def __init__(self, db: Session):
