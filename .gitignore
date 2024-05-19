@@ -1,0 +1,13 @@
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Docker
+*.log
+*.pid
+
+venv
+
